@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    background:#fff;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ section .container{
+    background: #000;
+    width: 79px;
+    height: 79px;
+    border-radius: 16px;
+    transform: rotate(12deg);
+    position: relative;
+}
+.container .first{
+    width: 80px;
+    height: 80px;
+    background:#d82626;
+    position: absolute;
+    border-radius: 100%;
+    right:1px;
+    border:solid #fff 2px;
+    animation: animate 1s infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#first .see{
+    position: relative;
+}
+#first .dot{
+    width: 20px;
+    height: 20px;
+    background:#fff;
+    border-radius: 50%;
+    position: absolute;
+}
+.one{
+    top:16px;
+    left: 12px;
+    position: relative;
+}
+.one .last{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border-radius: 50%;
+    background:#fff;
+    top:16px;
+    left:19px;
+}
+.two{
+    right:16px;
+    top:12px;
+}
+.three{
+    top:44px;
+    left:14px;
+}
+.four{
+    right:14px;
+    top:42px;
+}
